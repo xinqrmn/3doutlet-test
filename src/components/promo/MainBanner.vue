@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import {Swiper, SwiperSlide} from 'swiper/vue'
 import {Autoplay, Pagination} from 'swiper/modules'
 import BaseContainer from "../ui/BaseContainer.vue";
@@ -10,34 +10,34 @@ import MainBannerItem from "./MainBannerItem.vue";
 </script>
 
 <template>
-  <section>
+  <section class="main-banner">
     <BaseContainer>
       <div class="slider">
         <Swiper
-            :modules="[Autoplay, Pagination]"
-            :slides-per-view="1"
-            :loop="true"
             :autoplay="{
-    delay: 5000,
-    disableOnInteraction: false
-  }"
+              delay: 5000,
+              disableOnInteraction: false
+            }"
+            :loop="true"
+            :modules="[Autoplay, Pagination]"
             :pagination="{
-    el: '.slider-pagination',
-    clickable: true
-  }"
+              el: '.slider-pagination',
+              clickable: true
+            }"
             :preventClicks="false"
             :preventClicksPropagation="false"
+            :slides-per-view="1"
             :touchStartPreventDefault="false"
         >
           <SwiperSlide>
             <MainBannerItem/>
           </SwiperSlide>
-<!--          <SwiperSlide>-->
-<!--            <MainBannerItem/>-->
-<!--          </SwiperSlide>-->
-<!--          <SwiperSlide>-->
-<!--            <MainBannerItem/>-->
-<!--          </SwiperSlide>-->
+          <SwiperSlide>
+            <MainBannerItem/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <MainBannerItem/>
+          </SwiperSlide>
         </Swiper>
 
         <div class="slider-controls">
@@ -49,6 +49,10 @@ import MainBannerItem from "./MainBannerItem.vue";
 </template>
 
 <style scoped>
+.main-banner {
+  margin-bottom: 5rem;
+}
+
 .slider {
   position: relative;
 }

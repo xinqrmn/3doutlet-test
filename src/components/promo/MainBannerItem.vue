@@ -51,4 +51,15 @@
 .required {
   font-weight: 400;
 }
+
+@media (max-width: 430px) {
+  .title {
+    font-size: 4rem;
+    line-height: 100%;
+  }
+  .subtitle {
+    font-size: 4rem;
+    line-height: 4.4rem;
+  }
+}
 </style>

@@ -30,6 +30,10 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+#app {
+    background: #F5F5F7;
+}
+
 input,
 button,
 textarea,
@@ -67,8 +71,8 @@ h6 {
 @font-face {
     font-family: 'Gotham Pro';
     src:
-            url('/fonts/GothamPro-Regular.woff2') format('woff2'),
-            url('/fonts/GothamPro-Regular.woff') format('woff');
+            url('/fonts/GothamPro.woff2') format('woff2'),
+            url('/fonts/GothamPro.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -136,11 +140,13 @@ h6 {
 
 :root {
     --font-primary: 'Gotham Pro';
-    --font-condensed: 'DIN Pro Condensed', 'Arial Narrow', sans-serif;
-    --font-fallback: system-ui, sans-serif;
 }
 
 body {
     font-family: var(--font-primary), sans-serif;
     font-weight: 500;
+}
+
+.title {
+    font-family: 'DIN Pro Condensed', sans-serif;
 }
