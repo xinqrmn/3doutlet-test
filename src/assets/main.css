@@ -1,0 +1,146 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: light --default;
+}
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Font imports — Gotham Pro & DIN Pro Condensed & Roboto Bold */
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src:
+            url('/fonts/GothamPro-Medium.woff2') format('woff2'),
+            url('/fonts/GothamPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src:
+            url('/fonts/GothamPro-Regular.woff2') format('woff2'),
+            url('/fonts/GothamPro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Condensed';
+    src:
+            url('/fonts/DINPro-CondensedMedium.woff2') format('woff2'),
+            url('/fonts/DINPro-CondensedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Condensed';
+    src:
+            url('/fonts/DINPro-CondensedBold.woff2') format('woff2'),
+            url('/fonts/DINPro-CondensedBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Condensed';
+    src:
+            url('/fonts/DINPro-CondensedBlack.woff2') format('woff2'),
+            url('/fonts/DINPro-CondensedBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Condensed';
+    src:
+            url('/fonts/DINPro-CondensedRegular.woff2') format('woff2'),
+            url('/fonts/DINPro-CondensedRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Condensed';
+    src:
+            url('/fonts/DINPro-CondensedLight.woff2') format('woff2'),
+            url('/fonts/DINPro-CondensedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+            url('/fonts/Roboto-Bold.woff2') format('woff2'),
+            url('/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font-primary: 'Gotham Pro';
+    --font-condensed: 'DIN Pro Condensed', 'Arial Narrow', sans-serif;
+    --font-fallback: system-ui, sans-serif;
+}
+
+body {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: 500;
+}
