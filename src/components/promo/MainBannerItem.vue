@@ -1,15 +1,17 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="main-banner">
     <div class="max-w-218">
-      <h2 class="title uppercase">1 кг пластика в подарок! <span class="text-[#FD4F00] font-normal">*</span></h2>
-      <p class="subtitle">Бесплатная доставка при покупке от 25 000 рублей </p>
+      <h2 class="title uppercase">
+        1 кг пластика в подарок! <span class="text-[#FD4F00] font-normal">*</span>
+      </h2>
+      <p class="subtitle">Бесплатная доставка при покупке от 25 000 рублей</p>
       <button class="banner-btn text-white bg-[#FD4F00]">Купить сейчас</button>
     </div>
-    <p class="required"> <span class="text-[#FD4F00] text-4xl">*</span> При покупке принтера Bambu Lab</p>
+    <p class="required">
+      <span class="text-[#FD4F00] text-4xl">*</span> При покупке принтера Bambu Lab
+    </p>
   </div>
 </template>
 
@@ -21,7 +23,7 @@
 }
 
 .title {
-  font-family: 'DIN Pro Condensed', sans-serif;
+  font-family: "DIN Pro Condensed", sans-serif;
   font-weight: 900;
   font-size: 6rem;
   line-height: 7.2rem;
@@ -29,7 +31,7 @@
 }
 
 .subtitle {
-  font-family: 'DIN Pro Condensed', sans-serif;
+  font-family: "DIN Pro Condensed", sans-serif;
   font-weight: 200;
   font-size: 5rem;
   line-height: 4.4rem;
@@ -38,7 +40,7 @@
 }
 
 .banner-btn {
-  font-family: 'DIN Pro Condensed', sans-serif;
+  font-family: "DIN Pro Condensed", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 1.8rem;

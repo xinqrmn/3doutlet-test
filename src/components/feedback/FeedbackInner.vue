@@ -1,70 +1,67 @@
 <script setup lang="ts">
-import {Send} from 'lucide-vue-next'
-import FeedbackComment from "./FeedbackComment.vue";
+import { Send } from "lucide-vue-next"
+import FeedbackComment from "./FeedbackComment.vue"
 
 const comments = [
   {
-    id: '123',
-    avatar: 'A',
-    name: 'Антонина Иванова',
-    createdAt: '2 часа назад',
-    text: 'Всё супер, только один нюанс — упаковка могла бы быть поплотнее.'
+    id: "123",
+    avatar: "A",
+    name: "Антонина Иванова",
+    createdAt: "2 часа назад",
+    text: "Всё супер, только один нюанс — упаковка могла бы быть поплотнее."
   },
   {
-    id: '123',
-    avatar: 'A',
-    name: 'Антонина Иванова',
-    createdAt: '2 часа назад',
-    text: 'Всё супер, только один нюанс — упаковка могла бы быть поплотнее.'
+    id: "123",
+    avatar: "A",
+    name: "Антонина Иванова",
+    createdAt: "2 часа назад",
+    text: "Всё супер, только один нюанс — упаковка могла бы быть поплотнее."
   },
   {
-    id: '123',
-    avatar: 'A',
-    name: 'Антонина Иванова',
-    createdAt: '2 часа назад',
-    text: 'Всё супер, только один нюанс — упаковка могла бы быть поплотнее.'
+    id: "123",
+    avatar: "A",
+    name: "Антонина Иванова",
+    createdAt: "2 часа назад",
+    text: "Всё супер, только один нюанс — упаковка могла бы быть поплотнее."
   },
   {
-    id: '123',
-    avatar: 'A',
-    name: 'Антонина Иванова',
-    createdAt: '2 часа назад',
-    text: 'Всё супер, только один нюанс — упаковка могла бы быть поплотнее.'
+    id: "123",
+    avatar: "A",
+    name: "Антонина Иванова",
+    createdAt: "2 часа назад",
+    text: "Всё супер, только один нюанс — упаковка могла бы быть поплотнее."
   }
 ]
 </script>
 
 <template>
   <div class="feedback-inner">
-
-    <div class="feedback-form ">
+    <div class="feedback-form">
       <div class="">
-        <h2 class=" text-3xl md:text-4xl font-bold mb-6">
-          Оставить комментарий
-        </h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Оставить комментарий</h2>
 
         <div class="space-y-5">
           <input
-              type="text"
-              placeholder="Ваше имя *"
-              class="input input-bordered input-lg w-full focus:none "
-              required
+            type="text"
+            placeholder="Ваше имя *"
+            class="input input-bordered input-lg w-full focus:none"
+            required
           />
 
           <input
-              type="email"
-              placeholder="Email (необязательно)"
-              class="input input-bordered input-lg w-full focus:none "
+            type="email"
+            placeholder="Email (необязательно)"
+            class="input input-bordered input-lg w-full focus:none"
           />
 
           <textarea
-              class="textarea textarea-bordered textarea-lg w-full h-[16rem]"
-              placeholder="Ваш отзыв..."
-              required
+            class="textarea textarea-bordered textarea-lg w-full h-[16rem]"
+            placeholder="Ваш отзыв..."
+            required
           ></textarea>
 
           <button class="btn">
-            <Send :size="16"/>
+            <Send :size="16" />
             Отправить
           </button>
         </div>
@@ -77,11 +74,7 @@ const comments = [
       </h2>
 
       <div class="space-y-5">
-        <FeedbackComment
-            v-for="comment in comments"
-            :key="comment.id"
-            v-bind="comment"
-        />
+        <FeedbackComment v-for="comment in comments" :key="comment.id" v-bind="comment" />
       </div>
     </div>
   </div>
@@ -99,13 +92,13 @@ const comments = [
 
 .input,
 .textarea {
-  padding: .8rem;
+  padding: 0.8rem;
   border-radius: 1rem;
   outline: none;
 }
 
 .btn {
-  background: #FD4F00;
+  background: #fd4f00;
   color: #fff;
   width: 100%;
   padding: 2.5rem;

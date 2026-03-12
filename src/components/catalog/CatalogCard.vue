@@ -1,27 +1,27 @@
 <script setup lang="ts">
-import {ArrowUpRight} from "lucide-vue-next";
+import { ArrowUpRight } from "lucide-vue-next"
 
 interface ICatalogCard {
-  imageSrc: string;
-  imageAlt: string;
-  title: string;
-  subtitle: string;
+  imageSrc: string
+  imageAlt: string
+  title: string
+  subtitle: string
 }
 
 const props = defineProps<ICatalogCard>()
 </script>
 
 <template>
-<div class="catalog-card">
-  <img class="catalog-image" :src="props.imageSrc" :alt="props.imageAlt">
-  <div class="catalog-text">
-    <h3>{{props.title}}</h3>
-    <p>{{props.subtitle}}</p>
+  <div class="catalog-card">
+    <img class="catalog-image" :src="props.imageSrc" :alt="props.imageAlt" />
+    <div class="catalog-text">
+      <h3>{{ props.title }}</h3>
+      <p>{{ props.subtitle }}</p>
+    </div>
+    <a class="catalog-action">
+      <ArrowUpRight :size="18" />
+    </a>
   </div>
-  <a class="catalog-action">
-    <ArrowUpRight :size="18" />
-  </a>
-</div>
 </template>
 
 <style scoped>
@@ -34,12 +34,14 @@ const props = defineProps<ICatalogCard>()
   max-height: 24rem;
   display: grid;
   grid-template-rows: max-content 1fr;
-  transition: transform .25s ease, box-shadow .25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .catalog-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .catalog-card:hover .catalog-action {
@@ -51,13 +53,13 @@ const props = defineProps<ICatalogCard>()
 
   h3 {
     text-transform: uppercase;
-    font-family: 'DIN Pro Condensed', sans-serif;
+    font-family: "DIN Pro Condensed", sans-serif;
     font-weight: 900;
     font-size: 2rem;
   }
 
   p {
-    color: #4B4B4B;
+    color: #4b4b4b;
     font-size: 1.4rem;
     line-height: 1.7rem;
 
@@ -72,15 +74,13 @@ const props = defineProps<ICatalogCard>()
 
 .catalog-action {
   position: absolute;
-  content: '';
-  padding: .7rem;
+  content: "";
+  padding: 0.7rem;
   background: #f8f8f8;
-  color: #FD4F00;
+  color: #fd4f00;
   border-radius: 50%;
   top: 2rem;
   right: 2rem;
   cursor: pointer;
 }
-
-
 </style>

@@ -1,12 +1,11 @@
 <script lang="ts" setup>
-import {Swiper, SwiperSlide} from 'swiper/vue'
-import {Autoplay, Pagination} from 'swiper/modules'
-import BaseContainer from "../ui/BaseContainer.vue";
+import { Swiper, SwiperSlide } from "swiper/vue"
+import { Autoplay, Pagination } from "swiper/modules"
+import BaseContainer from "../ui/BaseContainer.vue"
 
-import 'swiper/css'
-import 'swiper/css/pagination'
-import MainBannerItem from "./MainBannerItem.vue";
-
+import "swiper/css"
+import "swiper/css/pagination"
+import MainBannerItem from "./MainBannerItem.vue"
 </script>
 
 <template>
@@ -14,29 +13,29 @@ import MainBannerItem from "./MainBannerItem.vue";
     <BaseContainer>
       <div class="slider">
         <Swiper
-            :autoplay="{
-              delay: 5000,
-              disableOnInteraction: false
-            }"
-            :loop="true"
-            :modules="[Autoplay, Pagination]"
-            :pagination="{
-              el: '.slider-pagination',
-              clickable: true
-            }"
-            :preventClicks="false"
-            :preventClicksPropagation="false"
-            :slides-per-view="1"
-            :touchStartPreventDefault="false"
+          :autoplay="{
+            delay: 5000,
+            disableOnInteraction: false
+          }"
+          :loop="true"
+          :modules="[Autoplay, Pagination]"
+          :pagination="{
+            el: '.slider-pagination',
+            clickable: true
+          }"
+          :prevent-clicks="false"
+          :prevent-clicks-propagation="false"
+          :slides-per-view="1"
+          :touch-start-prevent-default="false"
         >
           <SwiperSlide>
-            <MainBannerItem/>
+            <MainBannerItem />
           </SwiperSlide>
           <SwiperSlide>
-            <MainBannerItem/>
+            <MainBannerItem />
           </SwiperSlide>
           <SwiperSlide>
-            <MainBannerItem/>
+            <MainBannerItem />
           </SwiperSlide>
         </Swiper>
 
@@ -66,7 +65,6 @@ import MainBannerItem from "./MainBannerItem.vue";
   z-index: 10;
 }
 
-/* точки */
 .slider :deep(.swiper-pagination-bullet) {
   width: 40px;
   height: 4px;

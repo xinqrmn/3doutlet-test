@@ -1,28 +1,24 @@
 <script setup lang="ts">
-import {
-  Star,
-  MessageCircle,
-  ShoppingCart, Dot
-} from "lucide-vue-next";
-import {ref} from "vue";
+import { Star, MessageCircle, ShoppingCart, Dot } from "lucide-vue-next"
+import { ref } from "vue"
 
-const inCart = ref(false);
+const inCart = ref(false)
 
-const toggleCart = () => inCart.value = !inCart.value;
+const toggleCart = () => (inCart.value = !inCart.value)
 </script>
 
 <template>
   <div class="product-item">
-    <div class="flex items-center justify-between ">
+    <div class="flex items-center justify-between">
       <h4 class="text-[#808080] text-lg">3D принтер</h4>
 
       <div class="flex items-center gap-4 text-lg">
         <p class="flex items-center gap-2">
-          <Star :size="16"/>
+          <Star :size="16" />
           4.6
         </p>
         <p class="flex items-center gap-2">
-          <MessageCircle :size="16"/>
+          <MessageCircle :size="16" />
           1890
         </p>
       </div>
@@ -35,7 +31,11 @@ const toggleCart = () => inCart.value = !inCart.value;
 
     <p class="text-[#808080] text-lg">3D принтер</p>
 
-    <img class="m-auto my-6" src="../../assets/images/product-printer.png" alt="Printer image">
+    <img
+      class="m-auto my-6"
+      src="../../assets/images/product-printer.png"
+      alt="Printer image"
+    />
 
     <div class="flex items-center justify-between mb-4">
       <div class="flex flex-col">
@@ -49,16 +49,16 @@ const toggleCart = () => inCart.value = !inCart.value;
     </div>
 
     <button
-        class="product-btn"
-        :class="{ 'product-btn--active': inCart }"
-        @click="toggleCart"
+      class="product-btn"
+      :class="{ 'product-btn--active': inCart }"
+      @click="toggleCart"
     >
-      <ShoppingCart v-if="!inCart"/>
+      <ShoppingCart v-if="!inCart" />
 
       <span v-if="!inCart">в корзину</span>
       <span v-else>в корзине</span>
 
-      <Dot/>
+      <Dot />
 
       <span v-if="!inCart">134 000 руб.</span>
       <span v-else>- 1шт +</span>
@@ -82,9 +82,9 @@ const toggleCart = () => inCart.value = !inCart.value;
 
 .product-btn {
   font-family: "DIN Pro Condensed", sans-serif;
-  background: #FD4F00;
+  background: #fd4f00;
   color: #fff;
-  gap: .8rem;
+  gap: 0.8rem;
   text-transform: uppercase;
   padding: 1.4rem 0;
   border-radius: 1.2rem;

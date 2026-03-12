@@ -1,5 +1,45 @@
-# Vue 3 + TypeScript + Vite
+# 3DOutlet Adaptive Page
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Адаптивная landing-страница интернет-магазина 3D-печати, разработанная на Vue 3.
+Проект демонстрирует современный frontend-подход: компонентную архитектуру, адаптивную верстку, анимации и
+переиспользуемые UI-блоки.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+---
+
+## Инструкция запуска
+
+### Установка зависимостей
+
+```bash
+npm install
+```
+
+### Запуск dev-сервера
+
+```bash
+npm run dev
+```
+
+После запуска приложение будет доступно по адресу:
+http://localhost:5173
+
+---
+
+## Использованные зависимости
+
+1. vue-ts (Composition API)
+2. vite
+3. typescript
+4. tailwindcss
+5. swiper
+6. lucide-vue-next
+7. swiper
+8. daisyui
+9. aos
+10. eslint
+11. prettier
+
+---
+
+> **P.S.** Спасибо за возможность выполнить тестовое задание. Я постарался реализовать его максимально качественно в
+ограниченные сроки. Буду рад, если результат моей работы окажется полезным и позволит оценить мой подход к разработке.

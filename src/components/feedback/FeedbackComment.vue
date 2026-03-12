@@ -1,23 +1,15 @@
 <script setup lang="ts">
-import {MessageCircle} from "lucide-vue-next";
-
-
-interface IFeedbackComment {
-  avatar: string
-  name: string
-  createdAt: string
-  text: string
-  id: string
-}
-const props = defineProps<IFeedbackComment>()
+import { MessageCircle } from "lucide-vue-next"
 </script>
 
 <template>
-  <div class="comment-card card bg-base-100  hover:shadow-md transition-all duration-300 ">
+  <div class="comment-card card bg-base-100 hover:shadow-md transition-all duration-300">
     <div class="card-body p-6">
       <div class="flex items-start gap-4">
         <div class="avatar placeholder">
-          <div class="bg-primary text-primary-content rounded-full w-14 h-14 flex items-center justify-center text-2xl font-medium shadow-sm">
+          <div
+            class="bg-primary text-primary-content rounded-full w-14 h-14 flex items-center justify-center text-2xl font-medium shadow-sm"
+          >
             {{ avatar }}
           </div>
         </div>
@@ -40,6 +32,4 @@ const props = defineProps<IFeedbackComment>()
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

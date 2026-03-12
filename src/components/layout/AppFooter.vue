@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import BaseContainer from "../ui/BaseContainer.vue";
-import FooterInner from "../footer/FooterInner.vue";
+import BaseContainer from "../ui/BaseContainer.vue"
+import FooterInner from "../footer/FooterInner.vue"
 </script>
 
 <template>
   <footer class="footer">
     <BaseContainer>
-      <FooterInner/>
+      <FooterInner />
     </BaseContainer>
   </footer>
 </template>

@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import BaseContainer from "../ui/BaseContainer.vue";
-import FeaturesItem from "./FeaturesItem.vue";
+import BaseContainer from "../ui/BaseContainer.vue"
+import FeaturesItem from "./FeaturesItem.vue"
 </script>
 
 <template>
   <section class="features">
     <BaseContainer>
-      <h2 class="title text-7xl sm:text-5xl w-full font-black uppercase flex items-center gap-3 mb-10 w-[90rem]">Почему нас выбирают и рекомендуют
-        уже более 5000 покупателей?
+      <h2
+        class="title text-7xl sm:text-5xl w-full font-black uppercase flex items-center gap-3 mb-10 w-[90rem]"
+      >
+        Почему нас выбирают и рекомендуют уже более 5000 покупателей?
       </h2>
 
       <div class="features-inner">

@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <a class="clients-item" href="#">
@@ -16,10 +15,10 @@
   justify-content: center;
   padding: 1.2rem;
   cursor: pointer;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
 }
 
 .clients-item:hover {
-  transform: translateY(-.6rem);
+  transform: translateY(-0.6rem);
 }
 </style>

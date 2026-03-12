@@ -1,21 +1,38 @@
 <script setup lang="ts">
-
-import BaseContainer from "../ui/BaseContainer.vue";
-import ClientsItem from "./ClientsItem.vue";
+import BaseContainer from "../ui/BaseContainer.vue"
+import ClientsItem from "./ClientsItem.vue"
 </script>
 
 <template>
   <section class="clients">
     <BaseContainer>
-      <h2 class="title text-7xl sm:text-5xl w-full font-black uppercase flex items-center gap-3 mb-10 w-[90rem]">Нам доверяют</h2>
+      <h2
+        class="title text-7xl sm:text-5xl w-full font-black uppercase flex items-center gap-3 mb-10 w-[90rem]"
+      >
+        Нам доверяют
+      </h2>
 
       <div class="clients-inner">
-        <ClientsItem><img src="../../assets/images/cleints/client-skolkovo.svg" alt="skolkovo logo"></ClientsItem>
-        <ClientsItem><img src="../../assets/images/cleints/client-yandex.svg" alt="yandex logo"></ClientsItem>
-        <ClientsItem><img src="../../assets/images/cleints/client-ozon.svg" alt="ozon logo"></ClientsItem>
-        <ClientsItem><img src="../../assets/images/cleints/client-vse-instrumenti.svg" alt="vse-instrumenti logo"></ClientsItem>
-        <ClientsItem><img src="../../assets/images/cleints/client-efko.svg" alt="efko logo"></ClientsItem>
-        <ClientsItem><img src="../../assets/images/cleints/client-avtovaz.svg" alt="avtovaz logo"></ClientsItem>
+        <ClientsItem
+          ><img src="../../assets/images/cleints/client-skolkovo.svg" alt="skolkovo logo"
+        /></ClientsItem>
+        <ClientsItem
+          ><img src="../../assets/images/cleints/client-yandex.svg" alt="yandex logo"
+        /></ClientsItem>
+        <ClientsItem
+          ><img src="../../assets/images/cleints/client-ozon.svg" alt="ozon logo"
+        /></ClientsItem>
+        <ClientsItem
+          ><img
+            src="../../assets/images/cleints/client-vse-instrumenti.svg"
+            alt="vse-instrumenti logo"
+        /></ClientsItem>
+        <ClientsItem
+          ><img src="../../assets/images/cleints/client-efko.svg" alt="efko logo"
+        /></ClientsItem>
+        <ClientsItem
+          ><img src="../../assets/images/cleints/client-avtovaz.svg" alt="avtovaz logo"
+        /></ClientsItem>
       </div>
     </BaseContainer>
   </section>

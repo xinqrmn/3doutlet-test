@@ -1,6 +1,5 @@
 <script setup lang="ts">
-
-import BaseContainer from "../ui/BaseContainer.vue";
+import BaseContainer from "../ui/BaseContainer.vue"
 </script>
 
 <template>
@@ -9,13 +8,19 @@ import BaseContainer from "../ui/BaseContainer.vue";
       <div class="telegram-inner">
         <div class="z-22 flex items-center gap-[3.5rem] flex-wrap">
           <div class="text-white">
-            <h4 class="title text-5xl uppercase font-black">Подпишитесь на наш канал в Telegram</h4>
+            <h4 class="title text-5xl uppercase font-black">
+              Подпишитесь на наш канал в Telegram
+            </h4>
             <p class="font-normal">Полезные советы и новости по 3D печати</p>
           </div>
           <a class="telegram-btn">Подписаться на канал</a>
         </div>
 
-        <img class="telegram-decor" src="../../assets/images/telegram-decor.png" alt="Telegram decor">
+        <img
+          class="telegram-decor"
+          src="../../assets/images/telegram-decor.png"
+          alt="Telegram decor"
+        />
       </div>
     </BaseContainer>
   </section>
@@ -23,7 +28,7 @@ import BaseContainer from "../ui/BaseContainer.vue";
 
 <style scoped>
 .telegram-inner {
-  background: #191B30;
+  background: #191b30;
   border-radius: 2.4rem;
   padding: 2.2rem 3rem;
   margin-bottom: 5rem;
@@ -39,7 +44,7 @@ import BaseContainer from "../ui/BaseContainer.vue";
   right: 0;
   top: 0;
   bottom: 0;
-  transition: transform .4s ease;
+  transition: transform 0.4s ease;
 }
 
 .telegram-inner:hover .telegram-decor {
@@ -48,7 +53,7 @@ import BaseContainer from "../ui/BaseContainer.vue";
 
 .telegram-btn {
   font-weight: 400;
-  background: #2AABEE;
+  background: #2aabee;
   color: #fff;
   padding: 1.4rem;
   font-size: 1.4rem;
